@@ -12,7 +12,11 @@ int main() {
     int casasBispo = 5;
     int casasRainha = 8;
 
-     int i; // variável auxiliar para os loops
+     int i, j; // variável auxiliar para os loops
+
+    // Movimento do Cavalo (2 para baixo, 1 para esquerda)
+    int casasBaixo = 2;
+    int casasEsquerda = 1;
 
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
@@ -46,6 +50,21 @@ int main() {
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+    // Movimento do CAVALO (loops aninhados)
+
+    printf("\nMovimento do Cavalo:\n");
+
+    // Loop externo com for: controla as duas casas "Baixo"
+    for (i = 1; i <= casasBaixo; i++) {
+        printf("Baixo\n");
+    }
+
+    // Loop interno com while: controla a casa "Esquerda"
+    j = 1;
+    while (j <= casasEsquerda) {
+        printf("Esquerda\n");
+        j++;
+    }
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
